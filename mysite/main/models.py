@@ -1,6 +1,8 @@
 from django.db import models
 
-# Create your models here.
+# Create your models here. After creating or updating models use 2 lines below in cmd to migrate the classes.
+# python manage.py makemigrations main
+# python manage.py migrate
 
 
 class ToDoList(models.Model):
