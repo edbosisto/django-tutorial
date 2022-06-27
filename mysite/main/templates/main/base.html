@@ -2,10 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Ed's Website</title>
+    <title>{% block title %}Ed's Website{% endblock %}</title>
 </head>
 <body>
-<p>Base Template</p>
+    <div id="content" name="content">
+        {% block content %}
+        default text
+        {% endblock %}
+    </div>
 
 </body>
 </html>
